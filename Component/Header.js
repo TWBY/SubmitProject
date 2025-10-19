@@ -512,7 +512,7 @@ class AIHeader extends HTMLElement {
           font-size: 1.5rem;
           font-weight: bold;
           color: #ffffff;
-          letter-spacing: 2px;
+          letter-spacing: 0.5px;
           text-align: left;
           padding: 18px 0 14px 24px;
           background: var(--primary-blue);
@@ -528,7 +528,7 @@ class AIHeader extends HTMLElement {
         @media (max-width: 420px) {
           .header-flex {
             font-size: 0.95rem;
-            letter-spacing: 1px;
+            letter-spacing: 0.3px;
             padding-left: 8px;
           }
         }
