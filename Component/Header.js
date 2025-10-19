@@ -534,7 +534,7 @@ class AIHeader extends HTMLElement {
         }
       </style>
       <div class="header-flex">
-        <span>AI 寫程式，施展你的魔法</span>
+        <span>AI 寫程式，打造你的數位產品</span>
         <div style="display: flex; align-items: center; gap: 12px;">
           <add-profile-btn></add-profile-btn>
           <about-box></about-box>
