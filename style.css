@@ -1,0 +1,91 @@
+/* Brickverse 品牌顏色系統 */
+:root {
+  /* 主要顏色 */
+  --primary-blue: #0184ff;
+  --primary-blue-light: #33a1ff;
+  --primary-blue-dark: #0066cc;
+  
+  /* 輔助顏色 */
+  --accent-yellow: #FAD75A;
+  --accent-yellow-light: #fbe485;
+  --accent-yellow-dark: #f8ca2b;
+  
+  /* 文字顏色 */
+  --text-primary: #000000;
+  --text-secondary: #666666;
+  --text-tertiary: #999999;
+  
+  /* 背景顏色 */
+  --background-primary: #FFFFFF;
+  --background-secondary: #F8F9FA;
+  --background-tertiary: #F1F3F4;
+  
+  /* 邊框顏色 */
+  --border-color: #E0E0E0;
+  
+  /* 陰影系統 */
+  --shadow-light: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-medium: 0 4px 12px rgba(0, 0, 0, 0.12);
+  --shadow-heavy: 0 8px 24px rgba(0, 0, 0, 0.16);
+  --shadow-blue: 0 4px 16px rgba(1, 132, 255, 0.2);
+  --shadow-yellow: 0 4px 16px rgba(250, 215, 90, 0.3);
+  
+  /* 圓角系統 */
+  --radius-small: 8px;
+  --radius-medium: 12px;
+  --radius-large: 16px;
+  --radius-xl: 20px;
+}
+
+body {
+  margin: 0;
+  background: var(--background-secondary);
+  color: var(--text-primary);
+  min-height: 100vh;
+  font-family: 'IBM Plex Sans JP', 'Noto Sans TC', 'Microsoft JhengHei', 'PingFang TC', Arial, sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+}
+
+#api-data {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-content: center;
+  align-items: start;
+  gap: 32px;
+  padding: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  /* 為 footer 留出空間 */
+  padding-bottom: 120px;
+}
+
+@media (max-width: 900px) {
+  #api-data {
+    gap: 24px;
+    padding: 24px;
+    padding-bottom: 100px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  #api-data {
+    padding: 16px 16px 80px 16px;
+    gap: 16px;
+    grid-template-columns: 1fr;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+#api-data gallery-card {
+  /* 讓每張卡片在格線中撐滿欄位，避免被固定寬度擠壓 */
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
